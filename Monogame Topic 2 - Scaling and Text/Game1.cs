@@ -71,16 +71,20 @@ namespace Monogame_Topic_2___Scaling_and_Text
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-            _spriteBatch.Begin();
+            //_spriteBatch.Begin();
 
-            _spriteBatch.Draw(rectangleTexture, rec1, Color.Red);
-            _spriteBatch.Draw(rectangleTexture, rec2, Color.Yellow);
+            //_spriteBatch.Draw(rectangleTexture, rec1, Color.Red);
+            //_spriteBatch.Draw(rectangleTexture, rec2, Color.Yellow);
+            //_spriteBatch.Draw(circleTexure, circleRect, Color.Purple);
+
+            //_spriteBatch.Draw(rectangleTexture, topRec, Color.Purple);
+            //_spriteBatch.Draw(rectangleTexture, halfRec, Color.Purple);
+            //_spriteBatch.Draw(rectangleTexture, bottomRec, Color.Purple);
+            //_spriteBatch.DrawString(TextFont, "Mr. Aldworth", new Vector2(100, 100), Color.Black);
+
+            //Assignment
             _spriteBatch.Draw(circleTexure, circleRect, Color.Purple);
 
-            _spriteBatch.Draw(rectangleTexture, topRec, Color.Purple);
-            _spriteBatch.Draw(rectangleTexture, halfRec, Color.Purple);
-            _spriteBatch.Draw(rectangleTexture, bottomRec, Color.Purple);
-            _spriteBatch.DrawString(TextFont, "Mr. Aldworth", new Vector2(100, 100), Color.Black);
 
 
             _spriteBatch.End();
