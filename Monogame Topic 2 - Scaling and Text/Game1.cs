@@ -15,9 +15,11 @@ namespace Monogame_Topic_2___Scaling_and_Text
 
         SpriteFont TextFont;
 
-        Rectangle rec1, rec2;
+        //Rectangle rec1, rec2;
+        //Rectangle topRec, halfRec, bottomRec;
+
+        //Assenment
         Rectangle circleRect;
-        Rectangle topRec, halfRec, bottomRec;
 
         public Game1()
         {
@@ -34,13 +36,17 @@ namespace Monogame_Topic_2___Scaling_and_Text
             _graphics.PreferredBackBufferHeight = window.Height;
             _graphics.ApplyChanges();
 
-            rec1 = new Rectangle(50, 50, 100, 35);
-            rec2 = new Rectangle(50, 100, 50, 40);
-            circleRect = new Rectangle(25, 70, 40, 80);
+            //rec1 = new Rectangle(50, 50, 100, 35);
+            //rec2 = new Rectangle(50, 100, 50, 40);
 
-            topRec = new Rectangle(0, 0, window.Width, 15);
-            halfRec = new Rectangle(0, 200, window.Width / 2, 20);
-            bottomRec = new Rectangle(0, window.Height -20, window.Width, 20);
+
+            //topRec = new Rectangle(0, 0, window.Width, 15);
+            //halfRec = new Rectangle(0, 200, window.Width / 2, 20);
+            //bottomRec = new Rectangle(0, window.Height -20, window.Width, 20);
+
+
+            //Asignment
+            circleRect = new Rectangle(0, 0, window.Width, window.Height);
 
 
             base.Initialize();
@@ -71,7 +77,7 @@ namespace Monogame_Topic_2___Scaling_and_Text
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-            //_spriteBatch.Begin();
+            _spriteBatch.Begin();
 
             //_spriteBatch.Draw(rectangleTexture, rec1, Color.Red);
             //_spriteBatch.Draw(rectangleTexture, rec2, Color.Yellow);
@@ -83,7 +89,7 @@ namespace Monogame_Topic_2___Scaling_and_Text
             //_spriteBatch.DrawString(TextFont, "Mr. Aldworth", new Vector2(100, 100), Color.Black);
 
             //Assignment
-            _spriteBatch.Draw(circleTexure, circleRect, Color.Purple);
+            _spriteBatch.Draw(circleTexure, circleRect, Color.Orange);
 
 
 
